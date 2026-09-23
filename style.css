@@ -484,7 +484,7 @@ padding-top: 30px;
 
 
 /* =========================================
-   MOBILE RESPONSIVE DESIGN
+   MOBILE VERSION
    ========================================= */
 
 @media (max-width: 768px) {
@@ -494,10 +494,11 @@ padding-top: 30px;
     }
 
     body {
-        width: 100%;
         margin: 0;
         padding: 0;
+        width: 100%;
         overflow-x: hidden;
+        font-size: 14px;
     }
 
 
@@ -505,9 +506,8 @@ padding-top: 30px;
 
     .navbar {
         width: 100%;
-        height: auto;
-        min-height: 70px;
-        padding: 10px 15px;
+        height: 55px;
+        padding: 8px 25px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -515,13 +515,13 @@ padding-top: 30px;
 
     .logos,
     .log {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .navlink {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        display: flex;
+        gap: 20px;
+        align-items: center;
     }
 
     .navlink a {
@@ -537,43 +537,46 @@ padding-top: 30px;
     }
 
     .heroleft {
-        width: 100%;
+        width: 55%;
     }
 
     .into {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .tagline {
+        font-size: 8px;
+        letter-spacing: 1px;
+        padding-top: 15px;
     }
 
     .we {
-        font-size: 32px;
-        line-height: 1.2;
-        margin-bottom: 20px;
+        font-size: 25px;
+        line-height: 1.25;
+        margin-bottom: 18px;
     }
 
     .description {
         width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 11px;
+        line-height: 1.4;
+        margin-bottom: 15px;
     }
 
     .herobox {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: 200px;
-        padding: 25px;
+        width: 45%;
+        height: 180px;
+        padding: 20px;
+        font-size: 12px;
     }
 
     .buttonone,
     .buttontwo {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px;
-        font-size: 16px;
+        width: 130px;
+        padding: 10px;
+        font-size: 11px;
     }
 
 
@@ -581,32 +584,36 @@ padding-top: 30px;
 
     .section-2 {
         width: 100%;
-        padding: 60px 20px;
+        padding: 50px 20px;
         display: flex;
-        flex-direction: column;
-        gap: 35px;
+        gap: 40px;
+        align-items: flex-start;
     }
 
     .about {
-        width: 100%;
+        width: 55%;
         padding: 0;
     }
 
     .technology {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .we-com {
-        font-size: 16px;
-        line-height: 1.6;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .workwithus a {
+        font-size: 11px;
+        padding-top: 0;
     }
 
     .box2 {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: 250px;
-        padding: 25px;
+        width: 45%;
+        height: 180px;
+        padding: 20px;
+        font-size: 11px;
     }
 
 
@@ -614,34 +621,53 @@ padding-top: 30px;
 
     .ourservices {
         width: 100%;
-        padding: 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .what {
+        padding-top: 10px;
+    }
+
+    .solution {
+        font-size: 13px;
+    }
+
+    .descript {
+        font-size: 11px;
     }
 
     .box-container {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 12px;
         width: 100%;
     }
 
     .servecescard {
-        width: 100%;
-        height: auto;
-        min-height: 220px;
-        padding: 30px;
+        width: calc((100% - 24px) / 3);
+        height: 170px;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 1.3;
     }
 
 
     /* ================= OUR WORK ================= */
 
     .ourwork {
-        padding: 40px 20px 20px;
+        padding: 50px 20px 20px;
+        text-align: center;
+    }
+
+    .ourworkh2 {
+        font-size: 25px;
     }
 
     .Featureprojects {
         display: flex;
-        flex-direction: column;
-        gap: 25px;
+        flex-direction: row;
+        gap: 16px;
         padding: 20px;
         width: 100%;
     }
@@ -649,30 +675,54 @@ padding-top: 30px;
     .projectbox-1,
     .projectbox-2,
     .projectbox-3 {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: 400px;
+        width: calc((100% - 32px) / 3);
+        height: 250px;
+        border-radius: 8px;
+    }
+
+    .featuresbox1-top,
+    .projectbox-2-top,
+    .rojectbox-3-top {
+        height: 120px;
+        font-size: 17px;
+    }
+
+    .explain {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .Featureprojects span {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .bottom {
+        font-size: 10px;
+        padding: 10px;
     }
 
 
     /* ================= LET'S BUILD ================= */
 
     .letsbuild-background {
-        padding: 40px 20px;
+        width: 100%;
+        padding: 30px 25px;
     }
 
     .letsbuild {
         display: flex;
-        flex-direction: column;
-        gap: 25px;
-        font-size: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 17px;
     }
 
     .startaproject {
-        width: 100%;
-        max-width: 250px;
-        font-size: 18px;
+        width: 110px;
+        height: 40px;
+        font-size: 11px;
     }
 
 
@@ -680,26 +730,50 @@ padding-top: 30px;
 
     .Contactus {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        flex-direction: row;
+        gap: 25px;
         width: 100%;
-        padding: 30px 20px;
+        padding: 35px 25px;
+    }
+
+    .Contactus > div:first-child {
+        width: 50%;
+    }
+
+    .Contactus .form-box {
+        width: 50%;
     }
 
     .Contactus p {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .form-box {
-        width: 100%;
-        max-width: 100%;
-        padding: 30px 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .form-box label {
+        font-size: 11px;
+        margin-top: 10px;
     }
 
     .form-box input,
     .form-box select,
     .form-box textarea {
         width: 100%;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .form-box textarea {
+        height: 80px;
+    }
+
+    .buttonthree {
+        width: 100px;
+        padding: 8px;
+        font-size: 11px;
     }
 
 
@@ -708,18 +782,19 @@ padding-top: 30px;
     .end {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .background {
-        padding: 30px 20px;
+        width: 100%;
+        padding: 25px;
     }
 
     .tec {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
-        font-size: 18px;
+        font-size: 12px;
     }
 }
